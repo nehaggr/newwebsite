@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <img class="a" src="Spider.jpg" width="100%"height="100%" >
+        <img class="a" src="successful-remote-workers-1024x512.png" width="100%" >
+        <img class="a" src="travel-alone.png" width="100%">
+
+
+        <script>
+            let s = 0;
+            slide(s);
+
+
+function slide(n)
+{
+    let img = document.getElementsByClassName("a");
+    s++;
+for(i=0;i<img.length;i++)
+{
+    img[i].style.display = "none";
+}
+
+if(s>=img.length)
+{
+    s = 0;
+}
+img[s].style.display = "block";
+
+
+
+setTimeout(slide,2000);
+}
+        </script>
+    </body>
+</html>
